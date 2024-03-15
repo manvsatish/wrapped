@@ -9,12 +9,16 @@ function HomePage() {
         navigate('/login');
     }
 
+    const handleRegisterClick = () => {
+        navigate('/register');
+    }
+
     return (
         <div className="front-page">
         <div className="title">WRAPPED</div>
         <div className="buttons">
             <button className="login-button" onClick={handleLoginClick}>LOGIN</button>
-            <button className="register-button">REGISTER</button>
+            <button className="register-button" onClick={handleRegisterClick}>REGISTER</button>
         </div>
         </div>
     );
