@@ -34,6 +34,14 @@ function Selection() {
             <button className='Gaana'></button>
             <button className='SiriusXM'></button>
         </div>
+        <div className='SelectedPlatforms'>
+            <div className='ChosenPlatformDisplay'></div>
+            <div className='ChosenPlatformDisplay'></div>
+            <div className='ChosenPlatformDisplay'></div>
+            <div className='ChosenPlatformDisplay'></div>
+            <div className='ChosenPlatformDisplay'></div>
+            <div className='ChosenPlatformDisplay'></div>
+        </div>
     </div>
   );
 }
