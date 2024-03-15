@@ -74,3 +74,9 @@
     font-style: italic;
     font-weight: 1000;
   }
+
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+  

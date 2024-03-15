@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@1000;ital,wght@0,1000;1,1000&display=swap');
+
+.selection-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000000;
+    background-size: cover;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.TopPadding {
+    width: 100%;
+    height: 300px;
+}
+
+.SelectionTitle {
+    font-size: 5em;
+    color: white;
+    font-style: italic;
+    font-weight: 1000;
+}
+
+.TextTitle {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.StreamingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 9000px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.AppContainer {
+    width: 175px;
+    height: 175px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    border-radius: 16px;
+    margin: 10px 10px 10px 10px;
+}
+
+.StreamingContainer::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 12px;
+    
+  }
+  
+  .StreamingContainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #000;
+  }
+  
+  .StreamingContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 10px;
+  }
+  
