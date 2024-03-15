@@ -46,29 +46,301 @@
     overflow-y: auto;
 }
 
-.AppContainer {
-    width: 175px;
-    height: 175px;
-    background-color: rgb(53, 53, 53);
-    color: rgb(255, 255, 255);
-    border-radius: 16px;
-    margin: 10px 10px 10px 10px;
-}
-
 .StreamingContainer::-webkit-scrollbar {
     width: 12px;
     border-radius: 12px;
-    
-  }
+}
   
-  .StreamingContainer::-webkit-scrollbar-thumb {
+.StreamingContainer::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 10px;
     border: 3px solid #000;
-  }
+}
   
-  .StreamingContainer::-webkit-scrollbar-thumb:hover {
+.StreamingContainer::-webkit-scrollbar-thumb:hover {
     background: #555;
     border-radius: 10px;
-  }
+}
+
+.Spotify {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/spotifylogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.AmazonMusic {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/amazonmusiclogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Tidal {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    background-image: url('./img/tidallogo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.YoutubeMusic {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/youtubemusiclogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.AppleMusic {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/ituneslogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Pandora {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/pandoralogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Deezer {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    background-image: url('./img/deezerlogo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.SoundCloud {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/soundcloudlogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Qobuz {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/qobuzlogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.IHeartRadio {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/iheartradiologo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.JioSaavn {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/jiosaavnlogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Anghami {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/anghamilogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.EightTracks {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/8trackslogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Idagio {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/idagiologo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Boomplay {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/boomplaylogo.png');
+    background-size: 110% 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.LiveOne {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/liveonelogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.BandCamp {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/bandcamplogo.png');
+    background-size: 110% 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.KKBox {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/kkboxlogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.Gaana {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/gaanalogo.png');
+    background-size: 110% 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
+
+.SiriusXM {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+    background-image: url('./img/siriusxmlogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden; 
+    border: none;
+}
   

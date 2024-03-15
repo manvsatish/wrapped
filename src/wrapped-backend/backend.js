@@ -16,7 +16,7 @@ app.post('/register', async (req, res) => {
     return res.status(409).json({ error: 'User already exists.' });
   }
 
-  // Other validations can go here (e.g., password length, email format)
+  // Other validations go here (e.g., password length, email format if necessary)
 
   const hashedPassword = await bcrypt.hash(password, 10);
   users[username] = { email, password: hashedPassword };
