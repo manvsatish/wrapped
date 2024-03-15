@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@1000;ital,wght@0,1000;1,1000&display=swap');
 
-.front-page {
+.login-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
     overflow: hidden;
   }
   
-  .front-page::before {
+  .login-page::before {
     content: ""; 
     position: absolute; 
     top: 0;
@@ -27,41 +27,50 @@
     z-index: 0; 
   }
 
-  .front-page > * {
+  .login-page > * {
     position: relative; /* Make content stack above the overlay */
     z-index: 1;
   }
 
-  .title {
-    font-size: 7em;
-    margin-bottom: 15px;
-    font-weight: 1000;
-    font-style: italic;
-  }
-  
-  .buttons {
+  .login-form {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
-  .login-button,
-  .register-button {
-    height: 100px;
-    width: 250px;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    font-size: 2em;
+  .login-input {
+    width: 500px;
+    height: 50px; 
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
     font-family: 'JetBrains Mono', monospace;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 7px;
   }
   
-  .login-button:hover,
-  .register-button:hover {
+  .login-b {
+    width: 150px; /* Or your desired width */
+    height: 70px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.3em;
+  }
+  
+  .login-b:hover {
     background-color: #818181;
   }
   
+  .LoginTitle {
+    font-size: 4em;
+    color: white;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: 1000;
+  }
