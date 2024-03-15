@@ -18,7 +18,7 @@ function Dashboard() {
   return (
     
     <div className="dashboard">
-        <div className="title">WRAPPED</div>
+        <div className="Dashboardtitle">WRAPPED</div>
       <div className="button-container">
         {/* Spotify Button */}
         <button
