@@ -29,7 +29,11 @@ function Selection() {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
 
   const handleSelectPlatform = (platform) => {
-    if (!selectedPlatforms.includes(platform) && selectedPlatforms.length < 6) {
+    if (selectedPlatforms.includes(platform)) {
+      // Remove the platform if it's already selected
+      setSelectedPlatforms(selectedPlatforms.filter(p => p !== platform));
+    } else if (selectedPlatforms.length < 6) {
+      // Add the platform if not already selected and less than 6 are selected
       setSelectedPlatforms([...selectedPlatforms, platform]);
     }
   };
