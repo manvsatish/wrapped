@@ -18,7 +18,7 @@ function Dashboard() {
   return (
     
     <div className="dashboard">
-        <div className="Dashboardtitle">WRAPPED</div>
+    <div className="Dashboardtitle">WRAPPED</div>
       <div className="button-container">
         {/* Spotify Button */}
         <button
@@ -57,7 +57,7 @@ function Dashboard() {
           style={{ backgroundImage: `url(${soundCloudLogo})` }}
         />
       </div>
-      <div className="music-player"></div>
+      <div className='SongContainer'></div>
     </div>
   );
 }
