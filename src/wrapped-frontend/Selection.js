@@ -45,7 +45,7 @@ function Selection() {
       <div className="TextTitle">SELECT UP TO 6 STREAMING PLATFORMS</div>
       <div className="StreamingContainer">
         {Object.keys(logoPaths).map(platform => (
-          <button key={platform} className={platform} onClick={() => handleSelectPlatform(platform)}></button>
+          <button key={platform} className={platform} onClick={() => handleSelectPlatform(platform)} style={{filter: selectedPlatforms.includes(platform) ? 'brightness(50%)' : 'none'}}></button>
         ))}
       </div>
 
