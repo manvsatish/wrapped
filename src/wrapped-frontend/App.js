@@ -4,6 +4,7 @@ import HomePage from './HomePage';
 import Login from './Login';
 import Register from './Register';
 import Selection from './Selection';
+import Dashboard from './Dashboard';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/selection" element={<Selection />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         {/* Define other routes here */}
       </Routes>
     </Router>

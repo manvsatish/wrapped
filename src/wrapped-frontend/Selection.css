@@ -19,6 +19,9 @@
 .TopPadding {
     width: 100%;
     height: 300px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 
 .SelectionTitle {
@@ -716,6 +719,19 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.buttonSelected {
-    filter: brightness(50%);
+.NextButton {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.NextButton:hover {
+    background-color: #858585;
 }

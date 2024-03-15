@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Selection.css';
+import { useNavigate } from 'react-router-dom';
 
 // Assuming you have logos stored in your public folder or somewhere accessible
 const logoPaths = {
@@ -27,6 +28,11 @@ const logoPaths = {
 
 function Selection() {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
+  const navigate = useNavigate();
+
+  const handleNextClick = async(event) => {
+    navigate('/dashboard')
+  }
 
   const handleSelectPlatform = (platform) => {
     if (selectedPlatforms.includes(platform)) {
@@ -40,7 +46,9 @@ function Selection() {
 
   return (
     <div className="selection-page">
-      <div className='TopPadding'></div>
+      <div className='TopPadding'>
+        <div className='NextButton' onClick={handleNextClick}>NEXT</div>
+      </div>
       <div className="SelectionTitle">WRAPPED</div>
       <div className="TextTitle">SELECT UP TO 6 STREAMING PLATFORMS</div>
       <div className="StreamingContainer">
