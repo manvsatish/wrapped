@@ -11,48 +11,49 @@ import soundCloudLogo from './icons/soundcloud.png';
 function Dashboard() {
   const navigate = useNavigate();
 
-    const handleClick = (service) => {
-        navigate('/dashboard/{service}')
-    }; 
+  const handleClick = (service) => {
+    // Correctly interpolate the service variable into the path
+    navigate(`/dashboard/${service}`);
+  };
 
   return (
     
     <div className="dashboard">
     <div className="Dashboardtitle">WRAPPED</div>
-      <div className="button-container">
+    <div className="button-container">
         {/* Spotify Button */}
         <button
-          onClick={() => handleClick({service: "spotify"})}
+          onClick={() => handleClick("spotify")}
           className="button"
           style={{ backgroundImage: `url(${spotifyLogo})` }}
         />
         {/* Pandora Button */}
         <button
-          onClick={() => handleClick({service: "pandora"})}
+          onClick={() => handleClick("pandora")}
           className="button"
           style={{ backgroundImage: `url(${pandoraLogo})` }}
         />
         {/* Amazon Music Button */}
         <button
-          onClick={() => handleClick({service: "amazonmusic"})}
+          onClick={() => handleClick( "amazonmusic")}
           className="button"
           style={{ backgroundImage: `url(${amazonMusicLogo})` }}
         />
         {/* Apple Music Button */}
         <button
-          onClick={() => handleClick({service: "applemusic"})}
+          onClick={() => handleClick( "applemusic")}
           className="button"
           style={{ backgroundImage: `url(${appleMusicLogo})` }}
         />
         {/* JioSaavn Button */}
         <button
-          onClick={() => handleClick({service: "jiosaavn"})}
+          onClick={() => handleClick("jiosaavn")}
           className="button"
           style={{ backgroundImage: `url(${jioSaavnLogo})` }}
         />
         {/* SoundCloud Button */}
         <button
-          onClick={() => handleClick({service: "soundcloud"})}
+          onClick={() => handleClick("soundcloud")}
           className="button"
           style={{ backgroundImage: `url(${soundCloudLogo})` }}
         />
